@@ -15,9 +15,14 @@ class Player(Turtle):
         self.penup()
         self.setpos(STARTING_POSITION)
 
-
     def move_up(self):
         self.forward(10)
 
+    def move_down(self):
+        self.backward(10)
+
     def player_reset(self):
         self.setpos(STARTING_POSITION)
+
+    def game_reset(self):
+        self.player_reset()
